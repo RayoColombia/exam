@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulacro: Copa Sudamericana</title>
+  <!-- Estilos base de la landing (estética simple y moderna) -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <main id="app" class="app">
+    <!-- Header / Landing -->
+    <header id="landing" class="landing" aria-labelledby="exam-title">
+      <h1 id="exam-title" class="title"></h1>
+      <p id="exam-subtitle" class="subtitle"></p>
+      <p id="exam-description" class="description"></p>
+      <button id="start-btn" class="btn primary" type="button">
+        <!-- Se setea vía JSON ("ui.primaryCTA") -->
+      </button>
+    </header>
+
+    <!-- Progreso y navegación -->
+    <section id="progress-section" class="progress-section" aria-live="polite" hidden>
+      <div class="progress-line">
+        <span id="progress-counter" class="progress-counter">0/0</span>
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+      <button id="goto-first-missing" class="btn link" type="button">
+        Ir a la primera sin responder
+      </button>
+    </section>
+
+    <!-- Contenedor de preguntas (scroll vertical) -->
+    <section id="questions-section" class="questions" hidden aria-describedby="validation-live">
+      <!-- Las preguntas se inyectan dinámicamente -->
+    </section>
+
+    <!-- Mensajes de validación accesibles -->
+    <div id="validation-live" class="sr-only" aria-live="assertive"></div>
+
+    <!-- Acción final -->
+    <section id="actions-section" class="actions" hidden>
+      <button id="submit-btn" class="btn success" type="button">
+        <!-- Se setea vía JSON ("ui.submitCTA") -->
+      </button>
+    </section>
+
+    <!-- Resultados y retroalimentación post-revisión -->
+    <section id="results-section" class="results" hidden>
+      <h2 class="results-title">Resultados</h2>
+      <p id="score-text" class="score-text"></p>
+      <div id="review-list" class="review-list">
+        <!-- Se listan preguntas con: elección, correcto/incorrecto, feedback de la opción elegida y explicación de la correcta -->
+      </div>
+      <div class="results-actions">
+        <button id="restart-btn" class="btn" type="button">Reiniciar simulacro</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS en módulos -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+  "exam": {
+    "id": "sudamericana-trivia-v1",
+    "title": "Simulacro: Copa Sudamericana",
+    "subtitle": "Trivia de conocimiento general",
+    "description": "Responde todas las preguntas. Al finalizar, obtendrás tu calificación y retroalimentación.",
+    "version": "1.0.0",
+    "timeLimitSeconds": null,
+    "metadata": {
+      "createdAt": "2025-08-25",
+      "locale": "es-CO",
+      "topic": "Fútbol - Copa Sudamericana"
+    }
+  },
+  "ui": {
+    "primaryCTA": "Iniciar simulacro",
+    "submitCTA": "Obtener calificación",
+    "requireAllAnswered": true,
+    "showPerQuestionFeedbackOnReview": true,
+    "progressCounter": true
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "category": "Historia",
+      "difficulty": "media",
+      "question": "¿En qué año se disputó por primera vez la Copa Sudamericana organizada por CONMEBOL?",
+      "options": [
+        { "key": "A", "text": "1998", "isCorrect": false, "feedback": "Incorrecta. 1998 no corresponde al debut de la Sudamericana; antes existían otros torneos como la Mercosur y Merconorte." },
+        { "key": "B", "text": "2002", "isCorrect": true,  "feedback": "Correcta. La primera edición de la Copa Sudamericana se jugó en 2002." },
+        { "key": "C", "text": "2005", "isCorrect": false, "feedback": "Incorrecta. Para 2005 el torneo ya llevaba varias ediciones; el inicio oficial fue en 2002." }
+      ],
+      "explanationCorrectAnswer": "La Copa Sudamericana reemplazó a torneos regionales previos y arrancó formalmente en 2002."
+    },
+    {
+      "id": "q2",
+      "type": "single_choice",
+      "category": "Clubes",
+      "difficulty": "media",
+      "question": "¿Qué club fue el primer campeón de la Copa Sudamericana?",
+      "options": [
+        { "key": "A", "text": "San Lorenzo (Argentina)", "isCorrect": true,  "feedback": "Correcta. San Lorenzo ganó la edición inaugural en 2002." },
+        { "key": "B", "text": "Cienciano (Perú)",       "isCorrect": false, "feedback": "Incorrecta. Cienciano conquistó el título en 2003, no en la edición inaugural." },
+        { "key": "C", "text": "Boca Juniors (Argentina)","isCorrect": false, "feedback": "Incorrecta. Boca no fue el primer campeón de la Sudamericana." }
+      ],
+      "explanationCorrectAnswer": "San Lorenzo se coronó en 2002 al vencer a Atlético Nacional en la final."
+    },
+    {
+      "id": "q3",
+      "type": "single_choice",
+      "category": "Formato",
+      "difficulty": "media",
+      "question": "¿Cuál de estas afirmaciones describe mejor el formato típico de la Copa Sudamericana en su era reciente?",
+      "options": [
+        { "key": "A", "text": "Fase todos contra todos de ida y vuelta entre 20 clubes y final a tres partidos.", "isCorrect": false, "feedback": "Incorrecta. No hay finales a tres partidos ni liga corta de 20 todos contra todos." },
+        { "key": "B", "text": "Fases eliminatorias con llaves de ida y vuelta, combinadas con etapa de grupos y final única en sede neutral.", "isCorrect": true,  "feedback": "Correcta. El formato reciente combina grupos, cruces a ida y vuelta y final única en sede neutral." },
+        { "key": "C", "text": "Solo play-off a partido único desde dieciseisavos hasta la final.", "isCorrect": false, "feedback": "Incorrecta. Aunque la final es única, las rondas previas no son todas a partido único." }
+      ],
+      "explanationCorrectAnswer": "CONMEBOL adoptó final única en sede neutral y combinó fase de grupos con eliminatorias a ida y vuelta."
+    },
+    {
+      "id": "q4",
+      "type": "single_choice",
+      "category": "Registros",
+      "difficulty": "media",
+      "question": "¿Qué país ha tenido históricamente múltiples clubes campeones de la Sudamericana?",
+      "options": [
+        { "key": "A", "text": "Argentina", "isCorrect": true,  "feedback": "Correcta. Varios clubes argentinos han ganado la Sudamericana." },
+        { "key": "B", "text": "Venezuela", "isCorrect": false, "feedback": "Incorrecta. Venezuela no registra múltiples campeones." },
+        { "key": "C", "text": "Bolivia",    "isCorrect": false, "feedback": "Incorrecta. Bolivia no registra múltiples campeones." }
+      ],
+      "explanationCorrectAnswer": "Argentina es de los países con más variedad de campeones en el palmarés."
+    },
+    {
+      "id": "q5",
+      "type": "single_choice",
+      "category": "Curiosidades",
+      "difficulty": "media",
+      "question": "¿Cuál de estos enunciados es verdadero sobre la Copa Sudamericana?",
+      "options": [
+        { "key": "A", "text": "El campeón obtiene solo un trofeo y no clasifica a ninguna otra competencia.", "isCorrect": false, "feedback": "Incorrecta. El campeón sí clasifica a otros torneos CONMEBOL." },
+        { "key": "B", "text": "El campeón clasifica a la Recopa Sudamericana y a la Copa Libertadores del año siguiente.", "isCorrect": true,  "feedback": "Correcta. Gana cupos a Recopa y Libertadores." },
+        { "key": "C", "text": "El subcampeón recibe cupo directo a la fase de grupos de la Copa Libertadores.", "isCorrect": false, "feedback": "Incorrecta. El subcampeón no obtiene ese beneficio automáticamente." }
+      ],
+      "explanationCorrectAnswer": "El campeón disputa la Recopa contra el ganador de la Libertadores y obtiene cupo a la Libertadores del año siguiente."
+    }
+  ]
+}
