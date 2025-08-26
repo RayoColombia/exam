@@ -3,7 +3,7 @@
 // Uso: node scripts/validate.mjs ./data/sudamericana-trivia-v1.json
 
 import fs from 'node:fs/promises';
-import Ajv from 'ajv';
+import Ajv from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 
 const [,, targetPath = './data/sudamericana-trivia-v1.json'] = process.argv;

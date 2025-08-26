@@ -154,9 +154,17 @@ export const handleSubmit = (state) => {
   renderResults(state);
 
   // Ocultar secciones del examen, mostrar resultados
-  document.getElementById('progress-section').hidden = true;
-  document.getElementById('questions-section').hidden = true;
-  document.getElementById('actions-section').hidden = true;
+  const progressSection = document.getElementById('progress-section');
+  const questionsSection = document.getElementById('questions-section');
+  const actionsSection = document.getElementById('actions-section');
+
+  progressSection.hidden = true;
+  actionsSection.hidden = true;
+
+  // Ocultar y limpiar preguntas para que solo quede la retroalimentación visible
+  questionsSection.hidden = true;
+  questionsSection.innerHTML = '';
+
   document.getElementById('results-section').hidden = false;
 };
 
