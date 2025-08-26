@@ -1,0 +1,23 @@
+{
+  "name": "simulacro-landing",
+  "version": "1.0.0",
+  "description": "Landing page modular para simulacros académicos con preguntas cargadas desde JSON.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "validate:exam": "node scripts/validate.mjs ./data/sudamericana-trivia-v1.json"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "keywords": [
+    "simulacro",
+    "landing-page",
+    "json",
+    "sudamericana",
+    "quiz"
+  ],
+  "author": "",
+  "license": "MIT"
+}
