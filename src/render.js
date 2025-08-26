@@ -19,6 +19,8 @@ export const showQuiz = () => {
   document.getElementById('progress-section').hidden = false;
   document.getElementById('questions-section').hidden = false;
   document.getElementById('actions-section').hidden = false;
+  const submitBtn = document.getElementById('submit-btn');
+  if (submitBtn) submitBtn.hidden = false;
   // Ocultar landing
   document.getElementById('landing').hidden = true;
 };
@@ -135,6 +137,9 @@ export const updateProgressUI = (state) => {
   }
   const fill = document.getElementById('progress-fill');
   if (fill) fill.style.width = `${percent}%`;
+
+  const gotoFirst = document.getElementById('goto-first-missing');
+  if (gotoFirst) gotoFirst.hidden = answered === total;
 };
 
 export const handleSubmit = (state) => {
@@ -157,9 +162,11 @@ export const handleSubmit = (state) => {
   const progressSection = document.getElementById('progress-section');
   const questionsSection = document.getElementById('questions-section');
   const actionsSection = document.getElementById('actions-section');
+  const submitBtn = document.getElementById('submit-btn');
 
   progressSection.hidden = true;
   actionsSection.hidden = true;
+  if (submitBtn) submitBtn.hidden = true;
 
   // Ocultar y limpiar preguntas para que solo quede la retroalimentación visible
   questionsSection.hidden = true;
